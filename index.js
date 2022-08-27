@@ -12,7 +12,7 @@ let myCharacter = 'MESSENGER';
 let playPath = 'public/plays/much-ado-about-nothing.txt';
 
 // Returns a boolean of whether this line is spoken by the character.
-// TODO: This incorrectly returns true when another character says our character's name.
+// TODO: This incorrectly returns true when another character says our character's name. Fix.
 function isSpokenByCharacter(character, line) {
     return line.includes(character);
 }
@@ -30,7 +30,7 @@ app.get('/', function (request, response) {
 
     // The play seems to separate each character's lines from the next by two newlines, \n\n.
     // Split on two newlines to get an array with each element being a characters lines.
-    let playLines = play.replace.split('\n\n');
+    let playLines = play.split('\n\n');
 
     // Start sending data for the response. This contains the first part of our html.
     response.write('<html><head><meta charset="UTF-8"></head><body><pre>');
