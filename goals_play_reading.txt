@@ -1,0 +1,27 @@
+1. make it usable for all plays
+   X- take command line input of text file name
+   X- take user input for character names
+   X- convert user input to all caps to match script
+    - program finds all the characters names
+
+
+2. additional functionality
+   
+   X - output shows how many lines each character has in high to low order
+        - doesn't need to be a complicated algorithm, find the biggest, put it first, etc.
+    - figure out who is talking to who
+        - which characters share scenes
+    - have names left alligned and have \t afterwards to align numbers after
+    - make testing program that can run several test script versions and run test cases
+
+3. potentially lofty goals
+    - take input of how many actors there will be
+        - divide up characters evenly between actors based on line counts
+    - make a new script with actor names assigned to characters
+
+
+ASSUMPTIONS:
+    - file input is a text file
+    - characters are denoted by entirely capitalized names
+        ex: LORD GORING vs. Lord Goring
+    - at least 2 actors
